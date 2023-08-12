@@ -13,11 +13,3 @@ size_t ft_strlcat(char *dest, const char *src, size_t n)
     dest[x] = '\0';
     return (x);
 }
-
-int main()
-{
-    char src[20] = "hello";
-    char dest[20] = "world";
-    ft_strlcat(dest, src, 10);
-    printf("%s\n", dest);
-}
