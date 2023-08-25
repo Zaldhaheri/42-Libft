@@ -43,6 +43,9 @@ char *ft_substr(char const *s, unsigned int start, size_t len);
 char ft_tolower(int c);
 char ft_toupper(int c);
 
+//bonus
+t_list *ft_lstnew(void *content);
+
 typedef struct s_list
 {
 void *content;
