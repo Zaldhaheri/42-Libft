@@ -8,6 +8,12 @@
 #include <unistd.h>
 #include <limits.h>
 
+typedef struct s_list
+{
+void *content;
+struct s_list *next;
+} t_list;
+
 int ft_atoi(const char *str);
 void ft_bzero(void *s, size_t n);
 void *ft_calloc(size_t nitems, size_t size);
@@ -45,11 +51,7 @@ char ft_toupper(int c);
 
 //bonus
 t_list *ft_lstnew(void *content);
-
-typedef struct s_list
-{
-void *content;
-struct s_list *next;
-} t_list;
+void ft_lstadd_front(t_list **lst, t_list *new);
+int ft_lstsize(t_list *lst);
 
 #endif
