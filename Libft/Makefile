@@ -11,11 +11,12 @@ SRCS = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c 
 		ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c \
 		ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c \
 
-BSRCS = ft_lstnew.c \
+BSRCS = ft_lstadd_back.c ft_lstadd_front.c ft_lstdelone ft_lstlast.c ft_lstnew.c \
+		ft_lstsize.c \
 
 OBJS = ${SRCS:.c=.o}
 
-BOBJS = ${SRCS:.c=.o}
+BOBJS = ${BSRCS:.c=.o}
 
 all : $(NAME)
 
