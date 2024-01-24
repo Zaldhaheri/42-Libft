@@ -6,7 +6,7 @@
 /*   By: zaldhahe <zaldhahe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/25 22:21:22 by zaldhahe          #+#    #+#             */
-/*   Updated: 2023/12/25 22:24:03 by zaldhahe         ###   ########.fr       */
+/*   Updated: 2024/01/22 10:44:44 by zaldhahe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	memset(s, 0, n);
+	ft_memset(s, 0, n);
 }

@@ -6,15 +6,15 @@
 /*   By: zaldhahe <zaldhahe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/25 22:48:12 by zaldhahe          #+#    #+#             */
-/*   Updated: 2024/01/16 14:52:48 by zaldhahe         ###   ########.fr       */
+/*   Updated: 2024/01/22 10:24:22 by zaldhahe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	count_word(char const *s, char c)
+int	count_word(char const *s, char c)
 {
-	size_t	d;
+	int	d;
 
 	d = 0;
 	while (*s)
@@ -38,9 +38,7 @@ char	*word(char const *s, char c)
 
 	i = 0;
 	if (!s)
-	{
 		return (NULL);
-	}
 	while (s[i] && s[i] != c)
 		i++;
 	str = malloc(sizeof(char) * (i + 1));
@@ -58,8 +56,7 @@ char	*word(char const *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	len;
-	size_t	j;
+	int		j;
 	char	**r;
 
 	j = 0;
